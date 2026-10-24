@@ -5,6 +5,6 @@ export const firebaseConfig = {
   authDomain: "secrets-78d64.firebaseapp.com",
   projectId: "secrets-78d64",
   storageBucket: "secrets-78d64.firebasestorage.app",
-  messagingSenderId: ""19265461151",
+  messagingSenderId: "19265461151",
   appId: "1:19265461151:web:b2fb7b1d62e02c76b17baa"
 };
