@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secrets From Others</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <div class="eyebrow">A little corner of honesty</div>
+      <h1>Secrets From<br>Others</h1>
+      <p class="subtitle">Words you’ve kept from people. Stories you’re ready to let go.</p>
+      <p class="note">No names. No profiles. Just anonymous thoughts.</p>
+    </header>
+
+    <div class="layout">
+      <section class="panel" aria-labelledby="write-heading">
+        <div class="section-heading">
+          <h2 id="write-heading">Leave a secret</h2>
+          <span class="count">Completely anonymous</span>
+        </div>
+        <form id="comment-form">
+          <label for="secret">Your words</label>
+          <textarea id="secret" placeholder="Write whatever is on your mind..." required maxlength="5000"></textarea>
+          <div class="composer-bottom">
+            <div class="privacy">Write as much or as little as you need (up to 5,000 characters).</div>
+            <button type="submit">Let it out&nbsp; ↗</button>
+          </div>
+          <div class="toast" id="status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <section class="panel" aria-labelledby="feed-heading">
+        <div class="feed-top">
+          <div class="section-heading" style="margin:0">
+            <h2 id="feed-heading">Shared secrets</h2>
+            <span class="count" id="comment-count">0 secrets</span>
+          </div>
+          <button class="sort" type="button" id="sort-button">Newest first ↓</button>
+        </div>
+        <div class="comments" id="comments" aria-live="polite"></div>
+      </section>
+    </div>
+    <footer class="footer">A quiet space for honest words · Please protect your privacy and others’</footer>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
